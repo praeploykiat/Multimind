@@ -29,7 +29,7 @@ else:
 
 
 BACKEND_MODEL = {
-    "gemini": "models/embedding-001",  # 768
+    "gemini": "models/gemini-embedding-001",  # 3072
     "openai": "text-embedding-ada-002"  # 1536
 }
 
