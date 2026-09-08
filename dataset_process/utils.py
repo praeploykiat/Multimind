@@ -1,4 +1,5 @@
 import os
+import time
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 from dotenv import load_dotenv, find_dotenv
 
@@ -34,7 +35,7 @@ BACKEND_MODEL = {
 }
 
 
-@retry(stop=stop_after_attempt(6), wait=wait_random_exponential(min=1, max=60))
+@retry(stop=stop_after_attempt(8), wait=wait_random_exponential(min=10, max=90))
 def get_embeddings(content, backend="gemini"):
     content = content.replace("\n\n", "\n").replace("\n", " ")
     if backend == "gemini":
@@ -44,6 +45,8 @@ def get_embeddings(content, backend="gemini"):
             task_type="semantic_similarity"
         )
         embedding = result["embedding"]
+        # free-tier gemini-embedding-001 has a low requests-per-minute quota
+        time.sleep(6)
     elif backend == "openai":
         result = openai.Embedding.create(
             input=content,

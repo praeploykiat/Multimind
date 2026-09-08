@@ -163,3 +163,4 @@ cython_debug/
 hf-spaces/
 etc/
 .conda
+dataset_process/*.h5
