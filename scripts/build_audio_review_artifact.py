@@ -9,8 +9,11 @@ import json
 import os
 
 RAW_DIR = os.path.dirname(__file__) + "/../raw"
-VIDEO_PATH = os.path.join(RAW_DIR, "game3.mp4")
-FEATURES_PATH = os.path.join(RAW_DIR, "game3_audio_features.json")
+# Trimmed to the discussion phase only (76s-105s of the original 105s clip;
+# see filter_discussion_phase.py) and re-encoded smaller (480p, crf 28) -
+# the original 5MB full-game base64 embed was slow to load in the artifact.
+VIDEO_PATH = os.path.join(RAW_DIR, "game3_discussion.mp4")
+FEATURES_PATH = os.path.join(RAW_DIR, "game3_audio_features_discussion_only.json")
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "audio_review.html")
 OUT_PATH = os.path.abspath(OUT_PATH)
 
@@ -19,6 +22,15 @@ with open(VIDEO_PATH, "rb") as f:
 
 with open(FEATURES_PATH, encoding="utf-8") as f:
     features = json.load(f)
+
+# The trimmed video's timeline starts at 0, but window_sec values are still
+# relative to the original full-game timeline (they start at 76) - shift
+# them so they line up with the trimmed video's own clock.
+cutoff_start = features["utterances"][0]["window_sec"][0]
+for u in features["utterances"]:
+    u["window_sec"] = [round(s - cutoff_start, 2) for s in u["window_sec"]]
+trimmed_duration = features["utterances"][-1]["window_sec"][1]
+features["game"]["duration_sec"] = trimmed_duration
 
 data_json = json.dumps(features, ensure_ascii=False)
 
@@ -125,8 +137,8 @@ footer a {{ color: var(--accent); }}
   <header>
     <h1>Werewolf Voice Check</h1>
     <div class="subtitle">
-      <code>ONE NIGHT ULTIMATE WEREWOLF  Retro 3 / Game3</code> &middot;
-      35 utterances &middot; ground truth vs Whisper transcript, plus audEERING arousal / valence / dominance, synced to playback
+      <code>ONE NIGHT ULTIMATE WEREWOLF  Retro 3 / Game3</code> &middot; discussion phase only (19 of 35 utterances &mdash; night phase + pre-discussion small talk dropped, see footer) &middot;
+      ground truth vs Whisper transcript, plus audEERING arousal / valence / dominance, synced to playback
     </div>
   </header>
 
@@ -156,6 +168,7 @@ footer a {{ color: var(--accent); }}
   </div>
 
   <footer>
+    Video trimmed to the discussion phase (original clip's 00:76&ndash;01:45) &mdash; night phase and pre-discussion small talk dropped, both because the app's spoken night-phase instructions bleed into the same audio track as the players' voices, and because that portion isn't the phenomenon of interest for persuasion-strategy analysis.<br>
     Data: <a href="https://github.com/praeploykiat/Multimind/tree/werewolf-among-us">praeploykiat/Multimind (werewolf-among-us branch)</a> &middot;
     Whisper (Radford et al., ICML 2023) &middot; audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim (Wagner et al., IEEE TPAMI 2023)
   </footer>
