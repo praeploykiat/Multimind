@@ -1,3 +1,10 @@
 # raw media - large, re-downloadable/regenerable, not source
 raw/*.mp4
 raw/*.wav
+raw/*.jpg
+raw/gaze_frames/
+raw/*.tflite
+raw/*.pt
+
+# vendored third-party repo - cloned fresh via scripts, not our source
+gazelle_src/

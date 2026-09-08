@@ -1,0 +1,2226 @@
+{
+  "game": {
+    "video_name": "ONE NIGHT ULTIMATE WEREWOLF  Retro 3",
+    "Game_ID": "Game3",
+    "split": "train"
+  },
+  "utterances": [
+    {
+      "Rec_Id": 2,
+      "speaker": "Justin",
+      "timestamp": "00:02",
+      "utterance_ground_truth": "Oh a spooky Western.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.791,
+            0.361,
+            0.961,
+            0.664
+          ],
+          "in_frame_score": 0.602,
+          "gaze_target_xy": [
+            0.781,
+            0.844
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.016,
+            0.328,
+            0.197,
+            0.65
+          ],
+          "in_frame_score": 0.572,
+          "gaze_target_xy": [
+            0.672,
+            0.484
+          ],
+          "looking_at_face_idx": 2
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.619,
+            0.344,
+            0.817,
+            0.697
+          ],
+          "in_frame_score": 0.697,
+          "gaze_target_xy": [
+            0.141,
+            0.391
+          ],
+          "looking_at_face_idx": 1
+        }
+      ]
+    },
+    {
+      "Rec_Id": 3,
+      "speaker": "James",
+      "timestamp": "00:03",
+      "utterance_ground_truth": "Mm-hmm.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.819,
+            0.375,
+            0.977,
+            0.656
+          ],
+          "in_frame_score": 0.671,
+          "gaze_target_xy": [
+            0.781,
+            0.844
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.034,
+            0.319,
+            0.208,
+            0.628
+          ],
+          "in_frame_score": 0.596,
+          "gaze_target_xy": [
+            0.672,
+            0.484
+          ],
+          "looking_at_face_idx": 3
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.325,
+            0.603,
+            0.498,
+            0.911
+          ],
+          "in_frame_score": 0.749,
+          "gaze_target_xy": [
+            0.375,
+            0.844
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.617,
+            0.381,
+            0.8,
+            0.706
+          ],
+          "in_frame_score": 0.62,
+          "gaze_target_xy": [
+            0.141,
+            0.391
+          ],
+          "looking_at_face_idx": 1
+        }
+      ]
+    },
+    {
+      "Rec_Id": 5,
+      "speaker": "Justin",
+      "timestamp": "00:07",
+      "utterance_ground_truth": "All right. This is the best one.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.02,
+            0.367,
+            0.189,
+            0.667
+          ],
+          "in_frame_score": 0.404,
+          "gaze_target_xy": [
+            0.766,
+            0.484
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.809,
+            0.411,
+            0.988,
+            0.728
+          ],
+          "in_frame_score": 0.207,
+          "gaze_target_xy": [
+            0.797,
+            0.766
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.32,
+            0.594,
+            0.478,
+            0.875
+          ],
+          "in_frame_score": 0.877,
+          "gaze_target_xy": [
+            0.375,
+            0.844
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 7,
+      "speaker": "Justin",
+      "timestamp": "00:11",
+      "utterance_ground_truth": "Gender specific.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.798,
+            0.372,
+            0.953,
+            0.647
+          ],
+          "in_frame_score": 0.225,
+          "gaze_target_xy": [
+            0.844,
+            0.812
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.009,
+            0.356,
+            0.194,
+            0.683
+          ],
+          "in_frame_score": 0.612,
+          "gaze_target_xy": [
+            0.609,
+            0.516
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.298,
+            0.553,
+            0.464,
+            0.847
+          ],
+          "in_frame_score": 0.809,
+          "gaze_target_xy": [
+            0.375,
+            0.812
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.75,
+            0.342,
+            0.891,
+            0.592
+          ],
+          "in_frame_score": 0.237,
+          "gaze_target_xy": [
+            0.812,
+            0.875
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 8,
+      "speaker": "James",
+      "timestamp": "00:13",
+      "utterance_ground_truth": "Werewolves are definitively male, we have found out.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.791,
+            0.361,
+            0.947,
+            0.639
+          ],
+          "in_frame_score": 0.097,
+          "gaze_target_xy": [
+            0.766,
+            0.859
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.005,
+            0.381,
+            0.183,
+            0.697
+          ],
+          "in_frame_score": 0.428,
+          "gaze_target_xy": [
+            0.812,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.745,
+            0.331,
+            0.887,
+            0.583
+          ],
+          "in_frame_score": 0.209,
+          "gaze_target_xy": [
+            0.781,
+            0.844
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.331,
+            0.603,
+            0.492,
+            0.889
+          ],
+          "in_frame_score": 0.801,
+          "gaze_target_xy": [
+            0.375,
+            0.844
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 11,
+      "speaker": "Justin",
+      "timestamp": "00:20",
+      "utterance_ground_truth": "Oh my God.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.772,
+            0.344,
+            0.927,
+            0.619
+          ],
+          "in_frame_score": 0.115,
+          "gaze_target_xy": [
+            0.812,
+            0.875
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.009,
+            0.344,
+            0.198,
+            0.681
+          ],
+          "in_frame_score": 0.361,
+          "gaze_target_xy": [
+            0.844,
+            0.812
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.558,
+            0.481,
+            0.709,
+            0.75
+          ],
+          "in_frame_score": 0.379,
+          "gaze_target_xy": [
+            0.516,
+            0.891
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.328,
+            0.578,
+            0.463,
+            0.817
+          ],
+          "in_frame_score": 0.733,
+          "gaze_target_xy": [
+            0.375,
+            0.844
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 13,
+      "speaker": "Justin",
+      "timestamp": "00:23",
+      "utterance_ground_truth": "Card.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.781,
+            0.256,
+            0.973,
+            0.597
+          ],
+          "in_frame_score": 0.364,
+          "gaze_target_xy": [
+            0.125,
+            0.797
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.0,
+            0.342,
+            0.194,
+            0.686
+          ],
+          "in_frame_score": 0.506,
+          "gaze_target_xy": [
+            0.797,
+            0.359
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.544,
+            0.494,
+            0.711,
+            0.792
+          ],
+          "in_frame_score": 0.357,
+          "gaze_target_xy": [
+            0.531,
+            0.906
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 15,
+      "speaker": "Mike",
+      "timestamp": "00:26",
+      "utterance_ground_truth": "Cards.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.8,
+            0.258,
+            0.975,
+            0.569
+          ],
+          "in_frame_score": 0.639,
+          "gaze_target_xy": [
+            0.125,
+            0.422
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.0,
+            0.353,
+            0.194,
+            0.697
+          ],
+          "in_frame_score": 0.668,
+          "gaze_target_xy": [
+            0.797,
+            0.375
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.367,
+            0.619,
+            0.522,
+            0.894
+          ],
+          "in_frame_score": 0.721,
+          "gaze_target_xy": [
+            0.391,
+            0.844
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 16,
+      "speaker": "Justin",
+      "timestamp": "00:28",
+      "utterance_ground_truth": "Robber.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.817,
+            0.408,
+            0.998,
+            0.731
+          ],
+          "in_frame_score": 0.4,
+          "gaze_target_xy": [
+            0.797,
+            0.859
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.0,
+            0.328,
+            0.198,
+            0.681
+          ],
+          "in_frame_score": 0.338,
+          "gaze_target_xy": [
+            0.859,
+            0.812
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 17,
+      "speaker": "James",
+      "timestamp": "00:28",
+      "utterance_ground_truth": "Is this the same like company as background?",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.817,
+            0.408,
+            0.998,
+            0.731
+          ],
+          "in_frame_score": 0.4,
+          "gaze_target_xy": [
+            0.797,
+            0.859
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.0,
+            0.328,
+            0.198,
+            0.681
+          ],
+          "in_frame_score": 0.338,
+          "gaze_target_xy": [
+            0.859,
+            0.812
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 20,
+      "speaker": "Justin",
+      "timestamp": "00:34",
+      "utterance_ground_truth": "Oh yeah. It is the same laugh.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.0,
+            0.364,
+            0.194,
+            0.708
+          ],
+          "in_frame_score": 0.432,
+          "gaze_target_xy": [
+            0.391,
+            0.547
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.794,
+            0.4,
+            0.966,
+            0.706
+          ],
+          "in_frame_score": 0.347,
+          "gaze_target_xy": [
+            0.844,
+            0.875
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.564,
+            0.453,
+            0.736,
+            0.758
+          ],
+          "in_frame_score": 0.631,
+          "gaze_target_xy": [
+            0.469,
+            0.875
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.678,
+            0.403,
+            0.845,
+            0.7
+          ],
+          "in_frame_score": 0.395,
+          "gaze_target_xy": [
+            0.562,
+            0.891
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 22,
+      "speaker": "James",
+      "timestamp": "00:41",
+      "utterance_ground_truth": "That's cool.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.778,
+            0.425,
+            0.95,
+            0.731
+          ],
+          "in_frame_score": 0.192,
+          "gaze_target_xy": [
+            0.844,
+            0.875
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.0,
+            0.356,
+            0.194,
+            0.7
+          ],
+          "in_frame_score": 0.461,
+          "gaze_target_xy": [
+            0.344,
+            0.875
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.559,
+            0.469,
+            0.709,
+            0.736
+          ],
+          "in_frame_score": 0.697,
+          "gaze_target_xy": [
+            0.562,
+            0.938
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.286,
+            0.569,
+            0.445,
+            0.853
+          ],
+          "in_frame_score": 0.714,
+          "gaze_target_xy": [
+            0.344,
+            0.875
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 24,
+      "speaker": "James",
+      "timestamp": "00:42",
+      "utterance_ground_truth": "This is cool.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.784,
+            0.422,
+            0.956,
+            0.728
+          ],
+          "in_frame_score": 0.149,
+          "gaze_target_xy": [
+            0.797,
+            0.875
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.037,
+            0.364,
+            0.202,
+            0.656
+          ],
+          "in_frame_score": 0.366,
+          "gaze_target_xy": [
+            0.766,
+            0.547
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.57,
+            0.467,
+            0.723,
+            0.739
+          ],
+          "in_frame_score": 0.636,
+          "gaze_target_xy": [
+            0.562,
+            0.938
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.266,
+            0.55,
+            0.444,
+            0.867
+          ],
+          "in_frame_score": 0.698,
+          "gaze_target_xy": [
+            0.141,
+            0.438
+          ],
+          "looking_at_face_idx": 1
+        }
+      ]
+    },
+    {
+      "Rec_Id": 28,
+      "speaker": "Justin",
+      "timestamp": "01:01",
+      "utterance_ground_truth": "No you don't.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.03,
+            0.339,
+            0.214,
+            0.667
+          ],
+          "in_frame_score": 0.637,
+          "gaze_target_xy": [
+            0.797,
+            0.625
+          ],
+          "looking_at_face_idx": 3
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.569,
+            0.486,
+            0.709,
+            0.736
+          ],
+          "in_frame_score": 0.559,
+          "gaze_target_xy": [
+            0.562,
+            0.891
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.8,
+            0.431,
+            0.963,
+            0.719
+          ],
+          "in_frame_score": 0.268,
+          "gaze_target_xy": [
+            0.797,
+            0.766
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.677,
+            0.414,
+            0.853,
+            0.728
+          ],
+          "in_frame_score": 0.293,
+          "gaze_target_xy": [
+            0.781,
+            0.844
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 30,
+      "speaker": "Mitchell",
+      "timestamp": "01:13",
+      "utterance_ground_truth": "Okay, I got some news.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.0,
+            0.339,
+            0.186,
+            0.669
+          ],
+          "in_frame_score": 0.57,
+          "gaze_target_xy": [
+            0.812,
+            0.469
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.783,
+            0.369,
+            0.963,
+            0.689
+          ],
+          "in_frame_score": 0.683,
+          "gaze_target_xy": [
+            0.141,
+            0.422
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.569,
+            0.497,
+            0.709,
+            0.747
+          ],
+          "in_frame_score": 0.315,
+          "gaze_target_xy": [
+            0.562,
+            0.938
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 31,
+      "speaker": "James",
+      "timestamp": "01:14",
+      "utterance_ground_truth": "No, I'm- I want to talk first.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.847,
+            0.242,
+            1.039,
+            0.583
+          ],
+          "in_frame_score": 0.699,
+          "gaze_target_xy": [
+            0.141,
+            0.422
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.011,
+            0.339,
+            0.192,
+            0.661
+          ],
+          "in_frame_score": 0.376,
+          "gaze_target_xy": [
+            0.875,
+            0.328
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.572,
+            0.478,
+            0.731,
+            0.761
+          ],
+          "in_frame_score": 0.112,
+          "gaze_target_xy": [
+            0.484,
+            0.906
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 32,
+      "speaker": "Mike",
+      "timestamp": "01:16",
+      "utterance_ground_truth": "Who'd you look at?",
+      "annotation": [
+        "Interrogation"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.0,
+            0.342,
+            0.181,
+            0.664
+          ],
+          "in_frame_score": 0.22,
+          "gaze_target_xy": [
+            0.859,
+            0.312
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.828,
+            0.2,
+            1.038,
+            0.572
+          ],
+          "in_frame_score": 0.811,
+          "gaze_target_xy": [
+            0.109,
+            0.422
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.6,
+            0.406,
+            0.752,
+            0.675
+          ],
+          "in_frame_score": 0.156,
+          "gaze_target_xy": [
+            0.125,
+            0.859
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 33,
+      "speaker": "James",
+      "timestamp": "01:17",
+      "utterance_ground_truth": "I'm just going to open up with this and then shut my mouth for the rest of the game.",
+      "annotation": [
+        "Defense"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.0,
+            0.322,
+            0.191,
+            0.661
+          ],
+          "in_frame_score": 0.824,
+          "gaze_target_xy": [
+            0.828,
+            0.406
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.306,
+            0.469,
+            0.473,
+            0.767
+          ],
+          "in_frame_score": 0.866,
+          "gaze_target_xy": [
+            0.828,
+            0.406
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.591,
+            0.419,
+            0.738,
+            0.681
+          ],
+          "in_frame_score": 0.516,
+          "gaze_target_xy": [
+            0.141,
+            0.406
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.405,
+            0.219,
+            0.659,
+            0.672
+          ],
+          "in_frame_score": 0.388,
+          "gaze_target_xy": [
+            0.828,
+            0.406
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 4,
+          "bbox": [
+            0.841,
+            0.367,
+            0.992,
+            0.636
+          ],
+          "in_frame_score": 0.933,
+          "gaze_target_xy": [
+            0.391,
+            0.5
+          ],
+          "looking_at_face_idx": 1
+        }
+      ]
+    },
+    {
+      "Rec_Id": 34,
+      "speaker": "Mitchell",
+      "timestamp": "01:21",
+      "utterance_ground_truth": "All right.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.825,
+            0.322,
+            0.989,
+            0.614
+          ],
+          "in_frame_score": 0.604,
+          "gaze_target_xy": [
+            0.156,
+            0.391
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.008,
+            0.319,
+            0.197,
+            0.656
+          ],
+          "in_frame_score": 0.911,
+          "gaze_target_xy": [
+            0.828,
+            0.438
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.297,
+            0.492,
+            0.442,
+            0.75
+          ],
+          "in_frame_score": 0.875,
+          "gaze_target_xy": [
+            0.828,
+            0.438
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.364,
+            0.108,
+            0.703,
+            0.711
+          ],
+          "in_frame_score": 0.683,
+          "gaze_target_xy": [
+            0.141,
+            0.406
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 4,
+          "bbox": [
+            0.656,
+            0.333,
+            0.848,
+            0.675
+          ],
+          "in_frame_score": 0.653,
+          "gaze_target_xy": [
+            0.172,
+            0.391
+          ],
+          "looking_at_face_idx": 1
+        }
+      ]
+    },
+    {
+      "Rec_Id": 35,
+      "speaker": "Mike",
+      "timestamp": "01:21",
+      "utterance_ground_truth": "That story doesn't work. I've tried it multiple.",
+      "annotation": [
+        "Accusation"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.825,
+            0.322,
+            0.989,
+            0.614
+          ],
+          "in_frame_score": 0.604,
+          "gaze_target_xy": [
+            0.156,
+            0.391
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.008,
+            0.319,
+            0.197,
+            0.656
+          ],
+          "in_frame_score": 0.911,
+          "gaze_target_xy": [
+            0.828,
+            0.438
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.297,
+            0.492,
+            0.442,
+            0.75
+          ],
+          "in_frame_score": 0.875,
+          "gaze_target_xy": [
+            0.828,
+            0.438
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.364,
+            0.108,
+            0.703,
+            0.711
+          ],
+          "in_frame_score": 0.683,
+          "gaze_target_xy": [
+            0.141,
+            0.406
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 4,
+          "bbox": [
+            0.656,
+            0.333,
+            0.848,
+            0.675
+          ],
+          "in_frame_score": 0.653,
+          "gaze_target_xy": [
+            0.172,
+            0.391
+          ],
+          "looking_at_face_idx": 1
+        }
+      ]
+    },
+    {
+      "Rec_Id": 36,
+      "speaker": "Justin",
+      "timestamp": "01:23",
+      "utterance_ground_truth": "All right, let's all vote for James?",
+      "annotation": [
+        "Call for Action"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.016,
+            0.325,
+            0.198,
+            0.65
+          ],
+          "in_frame_score": 0.966,
+          "gaze_target_xy": [
+            0.859,
+            0.406
+          ],
+          "looking_at_face_idx": 2
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.312,
+            0.497,
+            0.442,
+            0.728
+          ],
+          "in_frame_score": 0.963,
+          "gaze_target_xy": [
+            0.859,
+            0.406
+          ],
+          "looking_at_face_idx": 2
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.792,
+            0.275,
+            0.989,
+            0.625
+          ],
+          "in_frame_score": 0.521,
+          "gaze_target_xy": [
+            0.156,
+            0.391
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.708,
+            0.328,
+            0.884,
+            0.642
+          ],
+          "in_frame_score": 0.725,
+          "gaze_target_xy": [
+            0.172,
+            0.422
+          ],
+          "looking_at_face_idx": 0
+        }
+      ]
+    },
+    {
+      "Rec_Id": 37,
+      "speaker": "Mike",
+      "timestamp": "01:24",
+      "utterance_ground_truth": "Who'd you look at?",
+      "annotation": [
+        "Interrogation"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.0,
+            0.275,
+            0.212,
+            0.653
+          ],
+          "in_frame_score": 0.966,
+          "gaze_target_xy": [
+            0.891,
+            0.328
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.867,
+            0.272,
+            1.022,
+            0.547
+          ],
+          "in_frame_score": 0.817,
+          "gaze_target_xy": [
+            0.141,
+            0.375
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.3,
+            0.486,
+            0.444,
+            0.742
+          ],
+          "in_frame_score": 0.91,
+          "gaze_target_xy": [
+            0.906,
+            0.344
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.692,
+            0.364,
+            0.85,
+            0.644
+          ],
+          "in_frame_score": 0.386,
+          "gaze_target_xy": [
+            0.719,
+            0.875
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 4,
+          "bbox": [
+            0.348,
+            0.172,
+            0.694,
+            0.786
+          ],
+          "in_frame_score": 0.824,
+          "gaze_target_xy": [
+            0.922,
+            0.344
+          ],
+          "looking_at_face_idx": 1
+        }
+      ]
+    },
+    {
+      "Rec_Id": 38,
+      "speaker": "Mitchell",
+      "timestamp": "01:26",
+      "utterance_ground_truth": "Before I say what I looked at, is there anyone that can back me for being a seer?",
+      "annotation": [
+        "Interrogation",
+        "Defense"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.727,
+            0.403,
+            0.902,
+            0.714
+          ],
+          "in_frame_score": 0.67,
+          "gaze_target_xy": [
+            0.141,
+            0.359
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.0,
+            0.289,
+            0.209,
+            0.661
+          ],
+          "in_frame_score": 0.907,
+          "gaze_target_xy": [
+            0.703,
+            0.5
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.298,
+            0.506,
+            0.445,
+            0.767
+          ],
+          "in_frame_score": 0.933,
+          "gaze_target_xy": [
+            0.734,
+            0.531
+          ],
+          "looking_at_face_idx": 0
+        }
+      ]
+    },
+    {
+      "Rec_Id": 39,
+      "speaker": "Mike",
+      "timestamp": "01:30",
+      "utterance_ground_truth": "Yes, I can. I was the robber. I switched with you.",
+      "annotation": [
+        "Identity Declaration",
+        "Evidence"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.728,
+            0.372,
+            0.912,
+            0.7
+          ],
+          "in_frame_score": 0.903,
+          "gaze_target_xy": [
+            0.453,
+            0.938
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.006,
+            0.308,
+            0.198,
+            0.65
+          ],
+          "in_frame_score": 0.342,
+          "gaze_target_xy": [
+            0.422,
+            0.953
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.259,
+            0.511,
+            0.419,
+            0.794
+          ],
+          "in_frame_score": 0.792,
+          "gaze_target_xy": [
+            0.406,
+            0.938
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.339,
+            0.103,
+            0.666,
+            0.683
+          ],
+          "in_frame_score": 0.66,
+          "gaze_target_xy": [
+            0.406,
+            0.938
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 40,
+      "speaker": "Mitchell",
+      "timestamp": "01:31",
+      "utterance_ground_truth": "I saw two werewolves.",
+      "annotation": [
+        "Evidence"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.733,
+            0.378,
+            0.917,
+            0.706
+          ],
+          "in_frame_score": 0.938,
+          "gaze_target_xy": [
+            0.156,
+            0.422
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.017,
+            0.344,
+            0.206,
+            0.681
+          ],
+          "in_frame_score": 0.69,
+          "gaze_target_xy": [
+            0.703,
+            0.469
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.258,
+            0.483,
+            0.398,
+            0.733
+          ],
+          "in_frame_score": 0.772,
+          "gaze_target_xy": [
+            0.391,
+            0.938
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 3,
+          "bbox": [
+            0.312,
+            0.606,
+            0.464,
+            0.875
+          ],
+          "in_frame_score": 0.737,
+          "gaze_target_xy": [
+            0.734,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        }
+      ]
+    },
+    {
+      "Rec_Id": 41,
+      "speaker": "Mike",
+      "timestamp": "01:33",
+      "utterance_ground_truth": "Okay.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.717,
+            0.375,
+            0.9,
+            0.7
+          ],
+          "in_frame_score": 0.766,
+          "gaze_target_xy": [
+            0.141,
+            0.438
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.002,
+            0.331,
+            0.198,
+            0.681
+          ],
+          "in_frame_score": 0.644,
+          "gaze_target_xy": [
+            0.703,
+            0.5
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.302,
+            0.489,
+            0.452,
+            0.756
+          ],
+          "in_frame_score": 0.807,
+          "gaze_target_xy": [
+            0.734,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        }
+      ]
+    },
+    {
+      "Rec_Id": 42,
+      "speaker": "Justin",
+      "timestamp": "01:33",
+      "utterance_ground_truth": "Like 100%?",
+      "annotation": [
+        "Interrogation"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.717,
+            0.375,
+            0.9,
+            0.7
+          ],
+          "in_frame_score": 0.766,
+          "gaze_target_xy": [
+            0.141,
+            0.438
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.002,
+            0.331,
+            0.198,
+            0.681
+          ],
+          "in_frame_score": 0.644,
+          "gaze_target_xy": [
+            0.703,
+            0.5
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.302,
+            0.489,
+            0.452,
+            0.756
+          ],
+          "in_frame_score": 0.807,
+          "gaze_target_xy": [
+            0.734,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        }
+      ]
+    },
+    {
+      "Rec_Id": 43,
+      "speaker": "Mitchell",
+      "timestamp": "01:35",
+      "utterance_ground_truth": "Yes.",
+      "annotation": [
+        "Evidence"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.706,
+            0.408,
+            0.892,
+            0.739
+          ],
+          "in_frame_score": 0.875,
+          "gaze_target_xy": [
+            0.375,
+            0.516
+          ],
+          "looking_at_face_idx": 2
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.002,
+            0.325,
+            0.2,
+            0.678
+          ],
+          "in_frame_score": 0.905,
+          "gaze_target_xy": [
+            0.734,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.306,
+            0.497,
+            0.452,
+            0.756
+          ],
+          "in_frame_score": 0.848,
+          "gaze_target_xy": [
+            0.734,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        }
+      ]
+    },
+    {
+      "Rec_Id": 44,
+      "speaker": "Justin",
+      "timestamp": "01:36",
+      "utterance_ground_truth": "I'm a villager.",
+      "annotation": [
+        "Identity Declaration"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.722,
+            0.381,
+            0.912,
+            0.719
+          ],
+          "in_frame_score": 0.844,
+          "gaze_target_xy": [
+            0.172,
+            0.422
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.013,
+            0.322,
+            0.208,
+            0.669
+          ],
+          "in_frame_score": 0.904,
+          "gaze_target_xy": [
+            0.703,
+            0.484
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.302,
+            0.503,
+            0.444,
+            0.756
+          ],
+          "in_frame_score": 0.764,
+          "gaze_target_xy": [
+            0.703,
+            0.469
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 45,
+      "speaker": "Mitchell",
+      "timestamp": "01:37",
+      "utterance_ground_truth": "Okay.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.716,
+            0.35,
+            0.911,
+            0.697
+          ],
+          "in_frame_score": 0.873,
+          "gaze_target_xy": [
+            0.109,
+            0.375
+          ],
+          "looking_at_face_idx": 1
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.0,
+            0.272,
+            0.205,
+            0.636
+          ],
+          "in_frame_score": 0.556,
+          "gaze_target_xy": [
+            0.703,
+            0.469
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.306,
+            0.497,
+            0.436,
+            0.728
+          ],
+          "in_frame_score": 0.84,
+          "gaze_target_xy": [
+            0.734,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        }
+      ]
+    },
+    {
+      "Rec_Id": 46,
+      "speaker": "Mike",
+      "timestamp": "01:38",
+      "utterance_ground_truth": "Vote to the left?",
+      "annotation": [
+        "Call for Action"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.714,
+            0.381,
+            0.902,
+            0.714
+          ],
+          "in_frame_score": 0.664,
+          "gaze_target_xy": [
+            0.594,
+            0.859
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.0,
+            0.322,
+            0.189,
+            0.658
+          ],
+          "in_frame_score": 0.88,
+          "gaze_target_xy": [
+            0.719,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.298,
+            0.511,
+            0.439,
+            0.761
+          ],
+          "in_frame_score": 0.767,
+          "gaze_target_xy": [
+            0.703,
+            0.5
+          ],
+          "looking_at_face_idx": null
+        }
+      ]
+    },
+    {
+      "Rec_Id": 47,
+      "speaker": "Justin",
+      "timestamp": "01:40",
+      "utterance_ground_truth": "Sure.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.758,
+            0.4,
+            0.927,
+            0.7
+          ],
+          "in_frame_score": 0.317,
+          "gaze_target_xy": [
+            0.578,
+            0.859
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.033,
+            0.303,
+            0.205,
+            0.608
+          ],
+          "in_frame_score": 0.906,
+          "gaze_target_xy": [
+            0.766,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.292,
+            0.497,
+            0.439,
+            0.758
+          ],
+          "in_frame_score": 0.764,
+          "gaze_target_xy": [
+            0.781,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        }
+      ]
+    },
+    {
+      "Rec_Id": 48,
+      "speaker": "Mitchell",
+      "timestamp": "01:40",
+      "utterance_ground_truth": "Vote now.",
+      "annotation": [
+        "Call for Action"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.758,
+            0.4,
+            0.927,
+            0.7
+          ],
+          "in_frame_score": 0.317,
+          "gaze_target_xy": [
+            0.578,
+            0.859
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.033,
+            0.303,
+            0.205,
+            0.608
+          ],
+          "in_frame_score": 0.906,
+          "gaze_target_xy": [
+            0.766,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.292,
+            0.497,
+            0.439,
+            0.758
+          ],
+          "in_frame_score": 0.764,
+          "gaze_target_xy": [
+            0.781,
+            0.5
+          ],
+          "looking_at_face_idx": 0
+        }
+      ]
+    },
+    {
+      "Rec_Id": 50,
+      "speaker": "Justin",
+      "timestamp": "01:42",
+      "utterance_ground_truth": "If you're a werewolf, I'll be very impressed.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.797,
+            0.314,
+            1.009,
+            0.692
+          ],
+          "in_frame_score": 0.349,
+          "gaze_target_xy": [
+            0.609,
+            0.859
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.0,
+            0.314,
+            0.194,
+            0.658
+          ],
+          "in_frame_score": 0.768,
+          "gaze_target_xy": [
+            0.875,
+            0.406
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.297,
+            0.494,
+            0.441,
+            0.75
+          ],
+          "in_frame_score": 0.764,
+          "gaze_target_xy": [
+            0.859,
+            0.406
+          ],
+          "looking_at_face_idx": 0
+        }
+      ]
+    },
+    {
+      "Rec_Id": 51,
+      "speaker": "Mike",
+      "timestamp": "01:42",
+      "utterance_ground_truth": "He's not. He's not.",
+      "annotation": [
+        "Defense"
+      ],
+      "faces": [
+        {
+          "face_idx": 0,
+          "bbox": [
+            0.797,
+            0.314,
+            1.009,
+            0.692
+          ],
+          "in_frame_score": 0.349,
+          "gaze_target_xy": [
+            0.609,
+            0.859
+          ],
+          "looking_at_face_idx": null
+        },
+        {
+          "face_idx": 1,
+          "bbox": [
+            0.0,
+            0.314,
+            0.194,
+            0.658
+          ],
+          "in_frame_score": 0.768,
+          "gaze_target_xy": [
+            0.875,
+            0.406
+          ],
+          "looking_at_face_idx": 0
+        },
+        {
+          "face_idx": 2,
+          "bbox": [
+            0.297,
+            0.494,
+            0.441,
+            0.75
+          ],
+          "in_frame_score": 0.764,
+          "gaze_target_xy": [
+            0.859,
+            0.406
+          ],
+          "looking_at_face_idx": 0
+        }
+      ]
+    }
+  ]
+}
