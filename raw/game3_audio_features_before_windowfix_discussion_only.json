@@ -12,16 +12,16 @@
       "timestamp": "01:16",
       "window_sec": [
         76,
-        77.6
+        77
       ],
       "utterance_ground_truth": "Who'd you look at?",
       "annotation": [
         "Interrogation"
       ],
-      "asr_transcript": "What's up first, who'd you look at?",
-      "arousal": 0.661022424697876,
-      "dominance": 0.6616501808166504,
-      "valence": 0.6052297353744507
+      "asr_transcript": "that's our first",
+      "arousal": 0.6431835889816284,
+      "dominance": 0.6636786460876465,
+      "valence": 0.5907580256462097
     },
     {
       "Rec_Id": 33,
@@ -29,16 +29,16 @@
       "timestamp": "01:17",
       "window_sec": [
         77,
-        81.6
+        81
       ],
       "utterance_ground_truth": "I'm just going to open up with this and then shut my mouth for the rest of the game.",
       "annotation": [
         "Defense"
       ],
-      "asr_transcript": "I'm just gonna open up with this and then shut my mouth for the rest of the game. Alright.",
-      "arousal": 0.7228309512138367,
-      "dominance": 0.7363072037696838,
-      "valence": 0.4663650095462799
+      "asr_transcript": "I'm just gonna open up with this and then shut my mouth for the rest of the game.",
+      "arousal": 0.7428928017616272,
+      "dominance": 0.7663940191268921,
+      "valence": 0.4910694360733032
     },
     {
       "Rec_Id": 34,
@@ -46,16 +46,16 @@
       "timestamp": "01:21",
       "window_sec": [
         81,
-        81.6
+        81.5
       ],
       "utterance_ground_truth": "All right.",
       "annotation": [
         "No Strategy"
       ],
-      "asr_transcript": "All right.",
-      "arousal": 0.18219655752182007,
-      "dominance": 0.17672109603881836,
-      "valence": 0.31617507338523865
+      "asr_transcript": "Alright.",
+      "arousal": 0.20178404450416565,
+      "dominance": 0.19136902689933777,
+      "valence": 0.3399522304534912
     },
     {
       "Rec_Id": 35,
@@ -63,16 +63,16 @@
       "timestamp": "01:21",
       "window_sec": [
         81,
-        83.6
+        83
       ],
       "utterance_ground_truth": "That story doesn't work. I've tried it multiple.",
       "annotation": [
         "Accusation"
       ],
-      "asr_transcript": "Alright, that's really just a workout.",
-      "arousal": 0.5241103172302246,
-      "dominance": 0.4943496584892273,
-      "valence": 0.3314582407474518
+      "asr_transcript": "Alright, that's really doesn't work after",
+      "arousal": 0.38081228733062744,
+      "dominance": 0.3904290199279785,
+      "valence": 0.35502374172210693
     },
     {
       "Rec_Id": 36,
@@ -80,16 +80,16 @@
       "timestamp": "01:23",
       "window_sec": [
         83,
-        84.6
+        84
       ],
       "utterance_ground_truth": "All right, let's all vote for James?",
       "annotation": [
         "Call for Action"
       ],
-      "asr_transcript": "Alright, let's have all for James.",
-      "arousal": 0.5561349391937256,
-      "dominance": 0.5407812595367432,
-      "valence": 0.5963278412818909
+      "asr_transcript": "Alright, let's have all for Jay.",
+      "arousal": 0.5195183753967285,
+      "dominance": 0.4998476505279541,
+      "valence": 0.6085690855979919
     },
     {
       "Rec_Id": 37,
@@ -97,16 +97,16 @@
       "timestamp": "01:24",
       "window_sec": [
         84,
-        86.6
+        86
       ],
       "utterance_ground_truth": "Who'd you look at?",
       "annotation": [
         "Interrogation"
       ],
-      "asr_transcript": "Who do you look at? It's B-",
-      "arousal": 0.5369566679000854,
-      "dominance": 0.5285496711730957,
-      "valence": 0.3991576135158539
+      "asr_transcript": "Who do you look at?",
+      "arousal": 0.535198450088501,
+      "dominance": 0.5621625185012817,
+      "valence": 0.5122109651565552
     },
     {
       "Rec_Id": 38,
@@ -114,17 +114,17 @@
       "timestamp": "01:26",
       "window_sec": [
         86,
-        90.6
+        90
       ],
       "utterance_ground_truth": "Before I say what I looked at, is there anyone that can back me for being a seer?",
       "annotation": [
         "Interrogation",
         "Defense"
       ],
-      "asr_transcript": "Before I say what I looked at, is there anyone who can back me for being a superhero?",
-      "arousal": 0.667748212814331,
-      "dominance": 0.6664999723434448,
-      "valence": 0.31618455052375793
+      "asr_transcript": "Before I say what I looked at, is there anyone who can back me for being a skater?",
+      "arousal": 0.6685656309127808,
+      "dominance": 0.6680865287780762,
+      "valence": 0.17806608974933624
     },
     {
       "Rec_Id": 39,
@@ -132,17 +132,17 @@
       "timestamp": "01:30",
       "window_sec": [
         90,
-        91.6
+        91
       ],
       "utterance_ground_truth": "Yes, I can. I was the robber. I switched with you.",
       "annotation": [
         "Identity Declaration",
         "Evidence"
       ],
-      "asr_transcript": "I was a robber, I switched it.",
-      "arousal": 0.5289901494979858,
-      "dominance": 0.5629383325576782,
-      "valence": 0.5663396120071411
+      "asr_transcript": "I was a rock.",
+      "arousal": 0.6280076503753662,
+      "dominance": 0.6294744610786438,
+      "valence": 0.6401623487472534
     },
     {
       "Rec_Id": 40,
@@ -150,16 +150,16 @@
       "timestamp": "01:31",
       "window_sec": [
         91,
-        93.6
+        93
       ],
       "utterance_ground_truth": "I saw two werewolves.",
       "annotation": [
         "Evidence"
       ],
       "asr_transcript": "I saw two werewolves.",
-      "arousal": 0.6309973001480103,
-      "dominance": 0.6585041284561157,
-      "valence": 0.5967505574226379
+      "arousal": 0.6473160982131958,
+      "dominance": 0.6714468002319336,
+      "valence": 0.6829663515090942
     },
     {
       "Rec_Id": 41,
@@ -167,16 +167,16 @@
       "timestamp": "01:33",
       "window_sec": [
         93,
-        93.6
+        93.5
       ],
       "utterance_ground_truth": "Okay.",
       "annotation": [
         "No Strategy"
       ],
-      "asr_transcript": "",
-      "arousal": 0.4080655574798584,
-      "dominance": 0.40150028467178345,
-      "valence": 0.35275113582611084
+      "asr_transcript": "you",
+      "arousal": 0.4327649474143982,
+      "dominance": 0.42393559217453003,
+      "valence": 0.36154046654701233
     },
     {
       "Rec_Id": 42,
@@ -184,16 +184,16 @@
       "timestamp": "01:33",
       "window_sec": [
         93,
-        95.6
+        95
       ],
       "utterance_ground_truth": "Like 100%?",
       "annotation": [
         "Interrogation"
       ],
-      "asr_transcript": "Okay, like 100%",
-      "arousal": 0.6283140182495117,
-      "dominance": 0.6036289930343628,
-      "valence": 0.38280022144317627
+      "asr_transcript": "Okay.",
+      "arousal": 0.3240469694137573,
+      "dominance": 0.33837342262268066,
+      "valence": 0.20687024295330048
     },
     {
       "Rec_Id": 43,
@@ -201,16 +201,16 @@
       "timestamp": "01:35",
       "window_sec": [
         95,
-        96.6
+        96
       ],
       "utterance_ground_truth": "Yes.",
       "annotation": [
         "Evidence"
       ],
-      "asr_transcript": "Like 100%? Yes!",
-      "arousal": 0.9282935261726379,
-      "dominance": 0.8335603475570679,
-      "valence": 0.8192675113677979
+      "asr_transcript": "like 100%",
+      "arousal": 0.8301747441291809,
+      "dominance": 0.7269589304924011,
+      "valence": 0.6641191840171814
     },
     {
       "Rec_Id": 44,
@@ -218,16 +218,16 @@
       "timestamp": "01:36",
       "window_sec": [
         96,
-        97.6
+        97
       ],
       "utterance_ground_truth": "I'm a villager.",
       "annotation": [
         "Identity Declaration"
       ],
       "asr_transcript": "Yeah, I'm a villager.",
-      "arousal": 0.7743440866470337,
-      "dominance": 0.7532632350921631,
-      "valence": 0.7523664236068726
+      "arousal": 0.7773840427398682,
+      "dominance": 0.7387105226516724,
+      "valence": 0.729050874710083
     },
     {
       "Rec_Id": 45,
@@ -235,16 +235,16 @@
       "timestamp": "01:37",
       "window_sec": [
         97,
-        98.6
+        98
       ],
       "utterance_ground_truth": "Okay.",
       "annotation": [
         "No Strategy"
       ],
       "asr_transcript": "Okay.",
-      "arousal": 0.5511477589607239,
-      "dominance": 0.5608261823654175,
-      "valence": 0.2924199104309082
+      "arousal": 0.41857439279556274,
+      "dominance": 0.4545481204986572,
+      "valence": 0.3029237687587738
     },
     {
       "Rec_Id": 46,
@@ -252,16 +252,16 @@
       "timestamp": "01:38",
       "window_sec": [
         98,
-        100.6
+        100
       ],
       "utterance_ground_truth": "Vote to the left?",
       "annotation": [
         "Call for Action"
       ],
-      "asr_transcript": "Alright, go to the left. Sure.",
-      "arousal": 0.5730370879173279,
-      "dominance": 0.5885341167449951,
-      "valence": 0.44712957739830017
+      "asr_transcript": "Alright, go to the left.",
+      "arousal": 0.42979493737220764,
+      "dominance": 0.47778719663619995,
+      "valence": 0.36830857396125793
     },
     {
       "Rec_Id": 47,
@@ -269,16 +269,16 @@
       "timestamp": "01:40",
       "window_sec": [
         100,
-        100.6
+        100.5
       ],
       "utterance_ground_truth": "Sure.",
       "annotation": [
         "No Strategy"
       ],
       "asr_transcript": "Sure.",
-      "arousal": 0.5923174619674683,
-      "dominance": 0.5332237482070923,
-      "valence": 0.2692190110683441
+      "arousal": 0.6053547859191895,
+      "dominance": 0.5284223556518555,
+      "valence": 0.32308727502822876
     },
     {
       "Rec_Id": 48,
@@ -286,16 +286,16 @@
       "timestamp": "01:40",
       "window_sec": [
         100,
-        102.6
+        102
       ],
       "utterance_ground_truth": "Vote now.",
       "annotation": [
         "Call for Action"
       ],
-      "asr_transcript": "Sure. Vote now. Time is on!",
-      "arousal": 0.8304437398910522,
-      "dominance": 0.8434194326400757,
-      "valence": 0.10905139148235321
+      "asr_transcript": "Sure, vote now.",
+      "arousal": 0.5683251023292542,
+      "dominance": 0.6068275570869446,
+      "valence": 0.4311215281486511
     },
     {
       "Rec_Id": 50,
@@ -303,16 +303,16 @@
       "timestamp": "01:42",
       "window_sec": [
         102,
-        102.6
+        102.5
       ],
       "utterance_ground_truth": "If you're a werewolf, I'll be very impressed.",
       "annotation": [
         "No Strategy"
       ],
-      "asr_transcript": "Time is on!",
-      "arousal": 0.8451258540153503,
-      "dominance": 0.8328135013580322,
-      "valence": 0.20219732820987701
+      "asr_transcript": "Time is on",
+      "arousal": 0.7934683561325073,
+      "dominance": 0.7596151828765869,
+      "valence": 0.317648321390152
     },
     {
       "Rec_Id": 51,

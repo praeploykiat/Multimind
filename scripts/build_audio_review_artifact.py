@@ -14,6 +14,10 @@ RAW_DIR = os.path.dirname(__file__) + "/../raw"
 # the original 5MB full-game base64 embed was slow to load in the artifact.
 VIDEO_PATH = os.path.join(RAW_DIR, "game3_discussion.mp4")
 FEATURES_PATH = os.path.join(RAW_DIR, "game3_audio_features_discussion_only.json")
+# Pre-fix version (naive window = [this utterance's timestamp, next one's
+# timestamp)) - kept so the artifact can show a before/after comparison of
+# the TRAILING_BUFFER_SEC windowing fix in extract_audio_features.py.
+BEFORE_FEATURES_PATH = os.path.join(RAW_DIR, "game3_audio_features_before_windowfix_discussion_only.json")
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "audio_review.html")
 OUT_PATH = os.path.abspath(OUT_PATH)
 
@@ -22,6 +26,12 @@ with open(VIDEO_PATH, "rb") as f:
 
 with open(FEATURES_PATH, encoding="utf-8") as f:
     features = json.load(f)
+
+with open(BEFORE_FEATURES_PATH, encoding="utf-8") as f:
+    before_features = json.load(f)
+before_by_id = {u["Rec_Id"]: u["asr_transcript"] for u in before_features["utterances"]}
+for u in features["utterances"]:
+    u["asr_transcript_before"] = before_by_id.get(u["Rec_Id"], "")
 
 # The trimmed video's timeline starts at 0, but window_sec values are still
 # relative to the original full-game timeline (they start at 76) - shift
@@ -115,6 +125,14 @@ video {{ width: 100%; display: block; background: #000; }}
 .text-block .v {{ font-size: 1.02rem; }}
 .gt .v {{ color: var(--text); }}
 .asr .v {{ color: var(--text-muted); font-style: italic; }}
+.asr-compare {{ display: grid; gap: 6px; }}
+.asr-compare .row {{ display: grid; grid-template-columns: 52px 1fr; gap: 8px; align-items: baseline; }}
+.asr-compare .tag {{ font-family: var(--mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 1px 0; }}
+.asr-compare .before .tag {{ color: var(--warm); }}
+.asr-compare .after .tag {{ color: var(--cool); }}
+.asr-compare .before .v {{ color: var(--text-muted); font-style: italic; text-decoration: line-through; text-decoration-color: var(--border); }}
+.asr-compare .after .v {{ color: var(--text); font-style: italic; }}
+.asr-compare .same {{ color: var(--text-muted); font-size: 0.8rem; font-style: italic; }}
 
 .strategy-tags {{ display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }}
 .tag {{ font-family: var(--mono); font-size: 0.68rem; padding: 2px 8px; border-radius: 20px; border: 1px solid var(--accent-dim); color: var(--accent); }}
@@ -138,7 +156,7 @@ footer a {{ color: var(--accent); }}
     <h1>Werewolf Voice Check</h1>
     <div class="subtitle">
       <code>ONE NIGHT ULTIMATE WEREWOLF  Retro 3 / Game3</code> &middot; discussion phase only (19 of 35 utterances &mdash; night phase + pre-discussion small talk dropped, see footer) &middot;
-      ground truth vs Whisper transcript, plus audEERING arousal / valence / dominance, synced to playback
+      ground truth vs Whisper transcript (before/after the window-timing fix), plus audEERING arousal / valence / dominance, synced to playback
     </div>
   </header>
 
@@ -169,6 +187,7 @@ footer a {{ color: var(--accent); }}
 
   <footer>
     Video trimmed to the discussion phase (original clip's 00:76&ndash;01:45) &mdash; night phase and pre-discussion small talk dropped, both because the app's spoken night-phase instructions bleed into the same audio track as the players' voices, and because that portion isn't the phenomenon of interest for persuasion-strategy analysis.<br>
+    "Before/after" compares the original per-utterance audio window (cut exactly at the next utterance's timestamp) against a fix that extends each window by a 0.6s trailing buffer &mdash; ground-truth timestamps mark when a line was logged, not necessarily exact speech onset, so several utterances' words were being clipped into the wrong neighboring segment.<br>
     Data: <a href="https://github.com/praeploykiat/Multimind/tree/werewolf-among-us">praeploykiat/Multimind (werewolf-among-us branch)</a> &middot;
     Whisper (Radford et al., ICML 2023) &middot; audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim (Wagner et al., IEEE TPAMI 2023)
   </footer>
@@ -278,9 +297,14 @@ function render(t) {{
       <div class="k">Ground truth</div>
       <div class="v">${{u.utterance_ground_truth || '—'}}</div>
     </div>
-    <div class="text-block asr">
-      <div class="k">Whisper transcript</div>
-      <div class="v">${{u.asr_transcript || '(empty)'}}</div>
+    <div class="text-block">
+      <div class="k">Whisper transcript &mdash; before/after the window-timing fix</div>
+      ${{u.asr_transcript_before === u.asr_transcript
+        ? `<div class="same">(unchanged) ${{u.asr_transcript || '(empty)'}}</div>`
+        : `<div class="asr-compare">
+             <div class="row before"><span class="tag">before</span><span class="v">${{u.asr_transcript_before || '(empty)'}}</span></div>
+             <div class="row after"><span class="tag">after</span><span class="v">${{u.asr_transcript || '(empty)'}}</span></div>
+           </div>`}}
     </div>
     <div class="strategy-tags">${{tags}}</div>
     <div class="card-label" style="margin-top:16px">Vocal emotion (audEERING)</div>

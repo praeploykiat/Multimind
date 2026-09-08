@@ -8,3 +8,5 @@ raw/*.pt
 
 # vendored third-party repo - cloned fresh via scripts, not our source
 gazelle_src/
+
+__pycache__/

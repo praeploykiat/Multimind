@@ -81,14 +81,31 @@ def load_game_dialogue():
     raise ValueError("Game not found in any split")
 
 
+TRAILING_BUFFER_SEC = 0.6  # see build_utterance_windows docstring
+
+
 def build_utterance_windows(dialogue, game_duration):
     """Each utterance's window runs from its own timestamp to the next
-    utterance's timestamp (or end of game for the last one)."""
+    utterance's timestamp (or end of game for the last one), extended by
+    TRAILING_BUFFER_SEC.
+
+    Timestamps mark when an utterance was logged, not necessarily the exact
+    audio onset - comparing transcripts against ground truth showed a
+    recurring "off by one" pattern (e.g. Rec_Id 41-43 in game3: the words
+    for each utterance kept showing up in the FOLLOWING utterance's window
+    instead), consistent with actual speech onset lagging behind its
+    timestamp. Cutting exactly at the next timestamp then clips it into the
+    wrong segment. The trailing buffer intentionally overlaps a bit into the
+    next utterance's own window rather than risk cutting speech off - some
+    duplicate audio between adjacent segments is a smaller problem than
+    misattributing whole utterances downstream.
+    """
     times = [to_sec(d["timestamp"]) for d in dialogue]
     windows = []
     for i, d in enumerate(dialogue):
         start = times[i]
-        end = times[i + 1] if i + 1 < len(dialogue) else game_duration
+        next_start = times[i + 1] if i + 1 < len(dialogue) else game_duration
+        end = min(next_start + TRAILING_BUFFER_SEC, game_duration)
         end = max(end, start + 0.5)  # guard against zero-length windows
         windows.append((start, end))
     return windows
