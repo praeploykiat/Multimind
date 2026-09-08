@@ -18,6 +18,12 @@ FEATURES_PATH = os.path.join(RAW_DIR, "game3_audio_features_discussion_only.json
 # timestamp)) - kept so the artifact can show a before/after comparison of
 # the TRAILING_BUFFER_SEC windowing fix in extract_audio_features.py.
 BEFORE_FEATURES_PATH = os.path.join(RAW_DIR, "game3_audio_features_before_windowfix_discussion_only.json")
+# OSUM (Geng et al. 2025) transcript + categorical tone, run separately on
+# Colab against the same discussion-phase utterances - already scoped to
+# discussion-phase only (the notebook filters before running), no separate
+# "_discussion_only" file needed.
+OSUM_FEATURES_PATH = os.path.join(RAW_DIR, "game3_osum_features.json")
+OSUM_BEFORE_FEATURES_PATH = os.path.join(RAW_DIR, "game3_osum_features_before_windowfix.json")
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "audio_review.html")
 OUT_PATH = os.path.abspath(OUT_PATH)
 
@@ -32,6 +38,20 @@ with open(BEFORE_FEATURES_PATH, encoding="utf-8") as f:
 before_by_id = {u["Rec_Id"]: u["asr_transcript"] for u in before_features["utterances"]}
 for u in features["utterances"]:
     u["asr_transcript_before"] = before_by_id.get(u["Rec_Id"], "")
+
+with open(OSUM_FEATURES_PATH, encoding="utf-8") as f:
+    osum_features = json.load(f)
+with open(OSUM_BEFORE_FEATURES_PATH, encoding="utf-8") as f:
+    osum_before_features = json.load(f)
+osum_by_id = {u["Rec_Id"]: u for u in osum_features["utterances"]}
+osum_before_by_id = {u["Rec_Id"]: u for u in osum_before_features["utterances"]}
+for u in features["utterances"]:
+    after = osum_by_id.get(u["Rec_Id"], {})
+    before = osum_before_by_id.get(u["Rec_Id"], {})
+    u["osum_transcript"] = after.get("osum_transcript", "")
+    u["osum_transcript_before"] = before.get("osum_transcript", "")
+    u["osum_tone"] = after.get("osum_tone", "")
+    u["osum_tone_before"] = before.get("osum_tone", "")
 
 # The trimmed video's timeline starts at 0, but window_sec values are still
 # relative to the original full-game timeline (they start at 76) - shift
@@ -137,6 +157,10 @@ video {{ width: 100%; display: block; background: #000; }}
 .strategy-tags {{ display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }}
 .tag {{ font-family: var(--mono); font-size: 0.68rem; padding: 2px 8px; border-radius: 20px; border: 1px solid var(--accent-dim); color: var(--accent); }}
 
+.tone-compare {{ display: flex; gap: 8px; align-items: center; margin-top: 4px; }}
+.tone-pill {{ font-family: var(--mono); font-size: 0.68rem; padding: 2px 9px; border-radius: 20px; border: 1px solid currentColor; }}
+.tone-arrow {{ color: var(--text-muted); font-size: 0.8rem; }}
+
 .vad {{ display: grid; gap: 10px; margin-top: 4px; }}
 .vad-row {{ display: grid; grid-template-columns: 76px 1fr 42px; align-items: center; gap: 10px; }}
 .vad-row .name {{ font-family: var(--mono); font-size: 0.72rem; color: var(--text-muted); }}
@@ -156,7 +180,7 @@ footer a {{ color: var(--accent); }}
     <h1>Werewolf Voice Check</h1>
     <div class="subtitle">
       <code>ONE NIGHT ULTIMATE WEREWOLF  Retro 3 / Game3</code> &middot; discussion phase only (19 of 35 utterances &mdash; night phase + pre-discussion small talk dropped, see footer) &middot;
-      ground truth vs Whisper transcript (before/after the window-timing fix), plus audEERING arousal / valence / dominance, synced to playback
+      ground truth vs Whisper + OSUM transcripts (before/after the window-timing fix), OSUM's categorical tone, and audEERING's continuous arousal / valence / dominance, synced to playback
     </div>
   </header>
 
@@ -189,7 +213,7 @@ footer a {{ color: var(--accent); }}
     Video trimmed to the discussion phase (original clip's 00:76&ndash;01:45) &mdash; night phase and pre-discussion small talk dropped, both because the app's spoken night-phase instructions bleed into the same audio track as the players' voices, and because that portion isn't the phenomenon of interest for persuasion-strategy analysis.<br>
     "Before/after" compares the original per-utterance audio window (cut exactly at the next utterance's timestamp) against a fix that extends each window by a 0.6s trailing buffer &mdash; ground-truth timestamps mark when a line was logged, not necessarily exact speech onset, so several utterances' words were being clipped into the wrong neighboring segment.<br>
     Data: <a href="https://github.com/praeploykiat/Multimind/tree/werewolf-among-us">praeploykiat/Multimind (werewolf-among-us branch)</a> &middot;
-    Whisper (Radford et al., ICML 2023) &middot; audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim (Wagner et al., IEEE TPAMI 2023)
+    Whisper (Radford et al., ICML 2023) &middot; audeering/wav2vec2-large-robust-12-ft-emotion-msp-dim (Wagner et al., IEEE TPAMI 2023) &middot; OSUM (Geng et al., 2025, arXiv:2501.13306)
   </footer>
 </div>
 
@@ -207,6 +231,11 @@ for (const u of utterances) {{
     colorIdx++;
   }}
 }}
+
+const toneColors = {{
+  happy: '#d9a154', sad: '#4fb3bf', anger: '#e2564f', neutral: '#8b90a0',
+  surprise: '#8a7fd1', fear: '#6a7fd1', disgust: '#6fbf73', other: '#8b90a0',
+}};
 
 function arousalColor(a) {{
   // interpolate cool (#4fb3bf) -> warm (#e2564f) by arousal 0..1
@@ -307,7 +336,28 @@ function render(t) {{
            </div>`}}
     </div>
     <div class="strategy-tags">${{tags}}</div>
-    <div class="card-label" style="margin-top:16px">Vocal emotion (audEERING)</div>
+
+    <div class="text-block" style="margin-top:16px">
+      <div class="k">OSUM transcript &mdash; before/after the window-timing fix</div>
+      ${{u.osum_transcript_before === u.osum_transcript
+        ? `<div class="same">(unchanged) ${{u.osum_transcript || '(empty)'}}</div>`
+        : `<div class="asr-compare">
+             <div class="row before"><span class="tag">before</span><span class="v">${{u.osum_transcript_before || '(empty)'}}</span></div>
+             <div class="row after"><span class="tag">after</span><span class="v">${{u.osum_transcript || '(empty)'}}</span></div>
+           </div>`}}
+    </div>
+    <div class="text-block">
+      <div class="k">OSUM tone (categorical)</div>
+      <div class="tone-compare">
+        ${{u.osum_tone_before === u.osum_tone
+          ? `<span class="tone-pill" style="color:${{toneColors[u.osum_tone] || '#8b90a0'}}">${{u.osum_tone || '—'}}</span>`
+          : `<span class="tone-pill" style="color:${{toneColors[u.osum_tone_before] || '#8b90a0'}}">${{u.osum_tone_before || '—'}}</span>
+             <span class="tone-arrow">&rarr;</span>
+             <span class="tone-pill" style="color:${{toneColors[u.osum_tone] || '#8b90a0'}}">${{u.osum_tone || '—'}}</span>`}}
+      </div>
+    </div>
+
+    <div class="card-label" style="margin-top:16px">Vocal emotion, continuous (audEERING)</div>
     <div class="vad">
       ${{vadRow('Arousal', u.arousal, 'var(--warm)')}}
       ${{vadRow('Valence', u.valence, 'var(--cool)')}}

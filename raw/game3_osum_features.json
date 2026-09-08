@@ -1,0 +1,296 @@
+{
+  "game": {
+    "video_name": "ONE NIGHT ULTIMATE WEREWOLF  Retro 3",
+    "Game_ID": "Game3",
+    "duration_sec": 105
+  },
+  "utterances": [
+    {
+      "Rec_Id": 32,
+      "speaker": "Mike",
+      "timestamp": "01:16",
+      "window_sec": [
+        76,
+        77.6
+      ],
+      "utterance_ground_truth": "Who'd you look at?",
+      "annotation": [
+        "Interrogation"
+      ],
+      "osum_transcript": "inaudible 000326 first who do you look at",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 33,
+      "speaker": "James",
+      "timestamp": "01:17",
+      "window_sec": [
+        77,
+        81.6
+      ],
+      "utterance_ground_truth": "I'm just going to open up with this and then shut my mouth for the rest of the game.",
+      "annotation": [
+        "Defense"
+      ],
+      "osum_transcript": "look at im just going to open up with this and then shut my mouth for the rest of the game all right",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 34,
+      "speaker": "Mitchell",
+      "timestamp": "01:21",
+      "window_sec": [
+        81,
+        81.6
+      ],
+      "utterance_ground_truth": "All right.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "osum_transcript": "all right",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 35,
+      "speaker": "Mike",
+      "timestamp": "01:21",
+      "window_sec": [
+        81,
+        83.6
+      ],
+      "utterance_ground_truth": "That story doesn't work. I've tried it multiple.",
+      "annotation": [
+        "Accusation"
+      ],
+      "osum_transcript": "all right and that story doesnt work ive tried to",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 36,
+      "speaker": "Justin",
+      "timestamp": "01:23",
+      "window_sec": [
+        83,
+        84.6
+      ],
+      "utterance_ground_truth": "All right, let's all vote for James?",
+      "annotation": [
+        "Call for Action"
+      ],
+      "osum_transcript": "all right lets go on for james",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 37,
+      "speaker": "Mike",
+      "timestamp": "01:24",
+      "window_sec": [
+        84,
+        86.6
+      ],
+      "utterance_ground_truth": "Who'd you look at?",
+      "annotation": [
+        "Interrogation"
+      ],
+      "osum_transcript": "would you look at it",
+      "osum_tone": "happy"
+    },
+    {
+      "Rec_Id": 38,
+      "speaker": "Mitchell",
+      "timestamp": "01:26",
+      "window_sec": [
+        86,
+        90.6
+      ],
+      "utterance_ground_truth": "Before I say what I looked at, is there anyone that can back me for being a seer?",
+      "annotation": [
+        "Interrogation",
+        "Defense"
+      ],
+      "osum_transcript": "before i say what i looked at is there anyone who could back me for being a seeryes i can",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 39,
+      "speaker": "Mike",
+      "timestamp": "01:30",
+      "window_sec": [
+        90,
+        91.6
+      ],
+      "utterance_ground_truth": "Yes, I can. I was the robber. I switched with you.",
+      "annotation": [
+        "Identity Declaration",
+        "Evidence"
+      ],
+      "osum_transcript": "i was a robber switched with",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 40,
+      "speaker": "Mitchell",
+      "timestamp": "01:31",
+      "window_sec": [
+        91,
+        93.6
+      ],
+      "utterance_ground_truth": "I saw two werewolves.",
+      "annotation": [
+        "Evidence"
+      ],
+      "osum_transcript": "i saw two werewolves",
+      "osum_tone": "happy"
+    },
+    {
+      "Rec_Id": 41,
+      "speaker": "Mike",
+      "timestamp": "01:33",
+      "window_sec": [
+        93,
+        93.6
+      ],
+      "utterance_ground_truth": "Okay.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "osum_transcript": "yeah",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 42,
+      "speaker": "Justin",
+      "timestamp": "01:33",
+      "window_sec": [
+        93,
+        95.6
+      ],
+      "utterance_ground_truth": "Like 100%?",
+      "annotation": [
+        "Interrogation"
+      ],
+      "osum_transcript": "okay like a hundred",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 43,
+      "speaker": "Mitchell",
+      "timestamp": "01:35",
+      "window_sec": [
+        95,
+        96.6
+      ],
+      "utterance_ground_truth": "Yes.",
+      "annotation": [
+        "Evidence"
+      ],
+      "osum_transcript": "like 100 yesyeah im a",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 44,
+      "speaker": "Justin",
+      "timestamp": "01:36",
+      "window_sec": [
+        96,
+        97.6
+      ],
+      "utterance_ground_truth": "I'm a villager.",
+      "annotation": [
+        "Identity Declaration"
+      ],
+      "osum_transcript": "谢俺们彪子军",
+      "osum_tone": "happy"
+    },
+    {
+      "Rec_Id": 45,
+      "speaker": "Mitchell",
+      "timestamp": "01:37",
+      "window_sec": [
+        97,
+        98.6
+      ],
+      "utterance_ground_truth": "Okay.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "osum_transcript": "okay",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 46,
+      "speaker": "Mike",
+      "timestamp": "01:38",
+      "window_sec": [
+        98,
+        100.6
+      ],
+      "utterance_ground_truth": "Vote to the left?",
+      "annotation": [
+        "Call for Action"
+      ],
+      "osum_transcript": "vote to the leftsure",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 47,
+      "speaker": "Justin",
+      "timestamp": "01:40",
+      "window_sec": [
+        100,
+        100.6
+      ],
+      "utterance_ground_truth": "Sure.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "osum_transcript": "sure",
+      "osum_tone": "neutral"
+    },
+    {
+      "Rec_Id": 48,
+      "speaker": "Mitchell",
+      "timestamp": "01:40",
+      "window_sec": [
+        100,
+        102.6
+      ],
+      "utterance_ground_truth": "Vote now.",
+      "annotation": [
+        "Call for Action"
+      ],
+      "osum_transcript": "sure vote nowtime is up",
+      "osum_tone": "happy"
+    },
+    {
+      "Rec_Id": 50,
+      "speaker": "Justin",
+      "timestamp": "01:42",
+      "window_sec": [
+        102,
+        102.6
+      ],
+      "utterance_ground_truth": "If you're a werewolf, I'll be very impressed.",
+      "annotation": [
+        "No Strategy"
+      ],
+      "osum_transcript": "time is up",
+      "osum_tone": "anger"
+    },
+    {
+      "Rec_Id": 51,
+      "speaker": "Mike",
+      "timestamp": "01:42",
+      "window_sec": [
+        102,
+        105
+      ],
+      "utterance_ground_truth": "He's not. He's not.",
+      "annotation": [
+        "Defense"
+      ],
+      "osum_transcript": "time is upif this is where were going to be inaudible 000416",
+      "osum_tone": "happy"
+    }
+  ]
+}
